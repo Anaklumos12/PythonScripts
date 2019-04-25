@@ -3,7 +3,7 @@ from lxml import html
 import requests
 
 print 'Hello, World!'
-url="http://forgery.motive.com/staging/Patches/5.1.3-HDM/dbscripts/"
+url=""
 thign = requests.get(url)
 tree = html.fromstring(thign.content)
 titles = tree.xpath('//a/@href')
